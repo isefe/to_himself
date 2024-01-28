@@ -1,0 +1,20 @@
+değişkenler - fonk isimleri küçük harf - rakam - _ içerebilir.
+her kelime _ ile ayrılmalı.
+const - static olmayan global var. yasak.
+boş satır boş olmalı
+satır , boşluk veya tab la bitemez.
+peşpeşe 2 boşluk olmaz.
+curly parantezden sonra yeni satıra geçmelisin.
+operator ve operand tek 1 boşluk ile ayrılmaı. 3 + 4 gibi
+keyword dan sonra bi boşluk while ( gibi.   else { gibi
+bir satırda 1 variable decleration olabilir
+dec ve initializon aynı satırda olamaz.
+fonksiyonda var. declaration dan sonra  bir boş satır bırak. başka türlü fonk. da boş satıra izin verilmez.
+declerationlar fonk. başında olmalı.
+çoklu atama yasak.
+return edilecek parantez içinde olmalı.
+
+fonskiyonlar arası 1 satır boşluk
+5 variable fazlası decleare edilmez 1 fonk için
+
+for , do while , switch , case yasak.

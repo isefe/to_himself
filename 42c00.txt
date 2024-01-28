@@ -1,0 +1,102 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+
+#include <unistd.h>
+
+
+void ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+
+void ft_print_alphabet()
+{
+	char i;
+
+	i = 'a';	
+	while(i <= 'z')
+	{
+		write(1, &i, 1);
+		i++;
+	}
+}
+
+
+void ft_print_reverse_alphabet(){
+    for(char i='z';i>='a';i--)
+        write(1,&i,1);
+    
+}
+
+
+void ft_print_numbers(){
+    for(char i='0';i<='9';i++)
+        write(1,&i,1);
+}
+
+void ft_is_negative(int n){
+    if(n<0)
+        write(1,&("N"),1);
+    else
+        write(1,&("P"),1);
+}
+
+void ft_print_comb(){
+    for(char i='0'; i<'8' ; i++){
+        for(char j=i+1 ; j<'9'; j++){
+            for(char l=j+1 ; l<='9' ;l++ ){
+                write(1,&i,1);
+                write(1,&j,1);
+                write(1,&l,1);
+                write(1,", ",2);
+            }
+            
+        }
+    }
+    
+    
+}
+
+void ft_putnbr(int nb){
+    char c = nb + '0';
+    if(nb<0){
+        c = -nb+ '0';
+        write(1,"-",1);
+    }
+    write(1,&c,1);   
+        
+    
+}
+
+
+int main()
+{
+    
+    /*char dizi1[]= {"Ahmet"};
+    char dizi2[]= {"Ahmet"};
+    char *s1 = dizi1;
+    char *s2= dizi2;
+    
+    ft_strcmp(s1,s2);*/
+    
+    
+    //ft_print_comb();
+    
+   //ft_print_alphabet();
+    //ft_print_reverse_alphabet();
+
+    //ft_print_numbers();
+
+    //ft_is_negative(31);
+
+   ft_putnbr(0);
+
+    return 0;
+}
